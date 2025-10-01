@@ -45,7 +45,7 @@ public class Main {
     private static Arvore nova_arvore(String input, boolean ehArvore) {
         No raiz = null;
 
-        if (ehArvore) raiz = new conversorArvore(input).converter();
+        if (ehArvore) raiz = new ConversorArvore(input).converter();
 
         return new Arvore(raiz, input, ehArvore);
     }

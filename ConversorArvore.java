@@ -1,8 +1,8 @@
-public class conversorArvore {
+public class ConversorArvore {
     private String[] tokens;
     private int pos;
 
-    public conversorArvore(String expressao) {
+    public ConversorArvore(String expressao) {
         expressao = expressao.replace("(", " ( ").replace(")", " ) ").trim();
         tokens = expressao.split("\\s+");
         pos = 0;
