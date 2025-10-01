@@ -6,9 +6,10 @@ public class Main {
     public static void main(String[] args) {
         Arvore[] arvs = get_file("entrada.txt");
         Scanner sc = new Scanner(System.in);
+        Cores c = new Cores();
         
         for (int i = 0; i < arvs.length; i++) {
-            System.out.printf("===== Arvore %d =====\n", i+1);
+            System.out.printf(c.red() + "===== Arvore %d =====\n" + c.reset(), i+1);
             stats_arvore(arvs[i]);
 
             boolean op = (i != arvs.length-1) ? opcao(sc) : false;
@@ -50,21 +51,24 @@ public class Main {
     }
 
     private static void stats_arvore(Arvore arv) {
-        if (arv.ehArvore()) {
-            System.out.println("Entrada: " + arv.get_expressao());
+        Cores c = new Cores();
 
-            System.out.println("\nArvore:");
+        if (arv.ehArvore()) {
+            System.out.println(c.reset() + "Entrada:" + c.cyan() + arv.get_expressao());
+
+            System.out.println(c.reset() + "\nArvore:" + c.cyan());
             arv.exibirArvore();
 
             System.out.println(
-                "\nAltura: " + arv.alturaArvore() +
-                "\nArvore: " + arv.ehArvore() +
-                "\n   BST: " + arv.ehBST() +
-                "\n   ALV: " + arv.ehAVL()
+                c.reset() + "\nAltura: " + c.cyan() + arv.alturaArvore() +
+                c.reset() + "\nArvore: " + c.cyan() + arv.ehArvore() +
+                c.reset() + "\n   BST: " + c.cyan() + arv.ehBST() +
+                c.reset() + "\n   ALV: " + c.cyan() + arv.ehAVL()
             );
 
-            System.out.println("\nArvore em preOrdem:");
+            System.out.println(c.reset() + "\nArvore em preOrdem:" + c.cyan());
             arv.preOrdem();
+            System.out.print(c.reset());
         }
         else System.out.printf("A entrada '%s' nao é valida!\n", arv.get_expressao());
     }
