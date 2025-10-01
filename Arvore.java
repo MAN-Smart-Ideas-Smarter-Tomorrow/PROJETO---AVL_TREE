@@ -1,15 +1,15 @@
 /* 
  * Integrantes (04G) {
  *     Matheus Leonardo Cardoso Kroeff {
- *         RA: MAX_SIZE426434;
+ *         RA: 10426434;
  *     }
  * 
  *     André Doerner Duarte {
- *         RA: MAX_SIZE427938;
+ *         RA: 10427938;
  *     }
  * 
  *     Naoto Ushizaki {
- *         RA: MAX_SIZE437445;
+ *         RA: 10437445;
  *     }
  * }
  */
