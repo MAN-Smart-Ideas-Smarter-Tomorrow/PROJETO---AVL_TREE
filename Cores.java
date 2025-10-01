@@ -1,4 +1,20 @@
-public class Cores {
+/* 
+ * Integrantes (04G) {
+ *     Matheus Leonardo Cardoso Kroeff {
+ *         RA: MAX_SIZE426434;
+ *     }
+ * 
+ *     André Doerner Duarte {
+ *         RA: MAX_SIZE427938;
+ *     }
+ * 
+ *     Naoto Ushizaki {
+ *         RA: MAX_SIZE437445;
+ *     }
+ * }
+ */
+
+ public class Cores {
     public String red() {
         return "\033[38;2;255;000;000m";
     }

@@ -1,4 +1,20 @@
-public class Arvore {
+/* 
+ * Integrantes (04G) {
+ *     Matheus Leonardo Cardoso Kroeff {
+ *         RA: MAX_SIZE426434;
+ *     }
+ * 
+ *     André Doerner Duarte {
+ *         RA: MAX_SIZE427938;
+ *     }
+ * 
+ *     Naoto Ushizaki {
+ *         RA: MAX_SIZE437445;
+ *     }
+ * }
+ */
+
+ public class Arvore {
     private No raiz;
     private String expressao = null;
     private boolean ehArvore = true;
